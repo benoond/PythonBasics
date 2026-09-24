@@ -70,6 +70,7 @@ def DeleteStudent():
     del_std=input("Enter student ID to Delete: ")
     if del_std in students:
         del students[del_std]
+        print("Successfully eleted")
     else:
         print("Not Found")
 
@@ -87,7 +88,7 @@ while True:
     if choice=="1":
         while True:
             AddStudent()
-            another=input("Add another Student? N to Exit ENTER to continue: ")
+            another=input("Add another Student? N to Exit or ENTER to continue: ")
             if another.lower()=="n":
                 break
 
@@ -95,29 +96,28 @@ while True:
         while True:
             ViewStudent()
             print()
-            another=input("Type N to Exit: ")
+            another=input("Type N to Exit or ENTER to continue: ")
             if another.lower()=="n":
                 break
     elif choice=="3":
         while True:
             SearchStudent()
             print()
-            another=input("Type N to Exit")
+            another=input("Type N to Exit or ENTER to continue: ")
             if another.lower()=="n":
                 break
     elif choice=="4":
         while True:
             UpdateStudent()
             print()
-            another=input("Type N to Exit: ")
+            another=input("Type N to Exit or ENTER to continue: ")
             if another.lower()=="n":
                 break
     elif choice=="5":
         while True:
             DeleteStudent()
-            print("Successfully eleted")
             print()
-            another=input("Type N to Exit: ")
+            another=input("Type N to Exit or ENTER to continue: ")
             if another.lower()=="n":
                 break
     elif choice=="6":
