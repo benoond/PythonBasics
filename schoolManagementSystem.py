@@ -30,6 +30,9 @@ def AddStudent():
 
 #view student list
 def ViewStudent():
+    if not students:
+        print("No students registered.")
+        return
     for student in students.values():
         print("ID:", student["id"]+",", "Name:", student["name"]+",", "Age:", student["Age"]+",", "Course:", student["Course"]+",")
 
